@@ -504,6 +504,10 @@
             }
 
             let badgeText, badgeColor, liveResultBlue, liveResultRed;
+            if (holesEntered === 0) {
+                liveResultBlue = 0;
+                liveResultRed = 0;
+            }
             if (liveDiff === 0) {
                 badgeText = "AS";
                 badgeColor = "tied";
